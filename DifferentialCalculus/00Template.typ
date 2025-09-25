@@ -47,9 +47,10 @@
 
 #let author = [
   #text(weight: "bold")[Gabriel Pinochet-Soto]
-  | Email: #link("mailto:gpin2@pdx.edu")[gpin2\@pdx.edu]
+  | Email: #link("mailto:gpin2@pdx.edu")[gpin2\@pdx.edu] \
   // | Website: #link("https://web.pdx.edu/~gpin2/")[web.pdx.edu/\~gpin2]
-  | Office: FMH 464-G
+  Office: FMH 464-G
+  | Office hours: *MW* 16:00-17:00, or by arrangement
 ]
 #let class = "MTH 251Z Differential Calculus"
 #let term = "Fall 2025"
@@ -71,4 +72,27 @@
   #line(stroke: psu-green, length: 100%)
 ]
 
-#show: main_format
+#let block = (title: none, body, color: psu-orange) => {
+  rect(
+    fill: color.lighten(90%),
+    stroke: 1pt + color,
+    radius: 5pt,
+    width: 100%,
+  )[
+    #if title != none {
+      rect(
+        fill: color,
+        width: 100%,
+        radius: (top: 5pt)
+      )[
+        #set text(fill: white, weight: "bold")
+        #h(0.5em)#title#h(0.5em)
+      ]
+      v(-0.3em)
+    }
+    #pad(0.5em)[#body]
+  ]
+}
+
+// Math notation
+#let dom = "dom"

@@ -4,6 +4,8 @@
 #date_header
 #make_title
 
+#show link: underline
+
 = Course Information
 
 + *Term* - Fall 2025
@@ -11,6 +13,7 @@
 + *CRN* - 14086
 + *Schedule* - MW 11:00 AM - 12:40 PM
 + *Location* - KMC 255
++ *Office hours* - *MW* 4:00 PM - 5:00 PM, or by arrangement
 
 == Drop and withdrawal deadlines
 
@@ -65,14 +68,14 @@ popular).
 
 + If you already have an Edfinity account from a previous course, please sign into it. Otherwise, go to step 2.
 + Go to the #link("https://edfinity.com/users/sign_in")[Edfinity registration page].
-+ You will be prompted to pay \$29 (or enter an access code _if_ you purchased one from the PSU bookstore) and enroll in our section.
++ You will be prompted to pay \$30 (or enter an access code _if_ you purchased one from the PSU bookstore) and enroll in our section.
 
 = Assignments and Grading
 
 Your course grade will be based on the following components:
 + Weekly online homework (Edfinity) - *25%*
-+ Midterm 1 on *#datetime(year: 2025, month: 10, day: 1).display("[weekday], [month repr:short] [day], [year]").* - *35%*
-+ Final exam on *#datetime(year: 2025, month: 12, day: 10).display("[weekday], [month repr:short] [day], [year]").* - *40%*
++ Midterm on *#datetime(year: 2025, month: 10, day: 29).display("[weekday], [month repr:short] [day], [year]").* - *35%*
++ Final exam on *#datetime(year: 2025, month: 12, day: 10).display("[weekday], [month repr:short] [day], [year]").* 11:10 AM - 1:00 PM - *40%*
 
 == Grading scale
 + *A*: 90.01% - 100%
@@ -169,9 +172,29 @@ or class situations.
 == Academic integrity
 
 Academic integrity is a vital part of the educational experience at PSU.
-The Student Code of Conduct is the university’s policy on academic dishonesty.
+The
+#link("https://www.pdx.edu/dos/psu-student-code-conduct#AcademicDishonesty")[
+Student Code of Conduct
+]
+is the university’s policy on academic dishonesty.
 A confirmed violation of that code in this course may result in failure of the
 course.
+
+== Incomplete grades policy statement
+
+Students do not have a right to receive or demand an _Incomplete grade_.
+The option of assigning an _Incomplete grade_ is at the *discretion of the
+instructor* when these criteria are met:
+- Required satisfactory course completion/participation
+- Reasonable justification for the request
+- Not sought as a substitute for a poor grade
+- Presence of a written agreement (such as the
+  #link("https://www.pdx.edu/registration/search/psu?keys=incomplete%20contract")[
+  Incomplete Contract
+  ])
+- A plan in place to resolve Incomplete status
+The Office of the Registrar’s website has the
+#link("https://www.pdx.edu/registration/incomplete-grades")[full Incomplete Grades policy].
 
 == DRC and accommodations
 
@@ -204,10 +227,43 @@ basic needs like safe shelter, sleep, and nutrition.
 Resource centers across campus are here to provide assistance, referrals, and
 support.
 Please contact anyone on this list for assistance:
-+ Basic Needs Hub: email to connect with the basic needs hub #link("mailto:basicneedshub@pdx.edu")[basicneedshub\@pdx.edu].
-+ Portland State Food Pantry:  email to connect with the PSU food pantry #link("mailto:pantry@pdx.edu")[pantry\@pdx.edu].
-+ C.A.R.E. Program: email to connect with the CARE Program #link("mailto:askdos@pdx.edu")[askdos\@pdx.edu], or call (503) 725-4422.
-+ Student Health & Counseling: email to connect with student health and counseling #link("mailto:askshac@pdx.edu")[askshac\@pdx.edu], or call (503) 725-2800.
++ *#link("https://www.pdx.edu/basic-needs-hub/")[Basic Needs Hub]* --
+  email to connect with the basic needs hub
+  #link("mailto:basicneedshub@pdx.edu")[basicneedshub\@pdx.edu].
++ *#link("http://psufp.com/")[Portland State Food Pantry]* --
+  email to connect with the PSU food pantry
+  #link("mailto:pantry@pdx.edu")[pantry\@pdx.edu].
++ #link("https://www.pdx.edu/dean-student-life/psu-cares")[C.A.R.E. Program] --
+  email to connect with the CARE Program
+  #link("mailto:askdos@pdx.edu")[askdos\@pdx.edu], or call (503) 725-4422.
++ #link("https://www.pdx.edu/health-counseling/")[Student Health & Counseling] --
+  email to connect with student health and counseling
+  #link("mailto:askshac@pdx.edu")[askshac\@pdx.edu], or call (503) 725-2800.
+
+== Student health and resources (SHAC) statement
+
+If you are having a mental health emergency and need to speak with someone
+immediately, come into SHAC at any time during SHAC
+#link("https://www.pdx.edu/health-counseling/hours-location")[hours of operation].
+After hours and weekends call the Multnomah County Crisis Line 503-988-4888.
+
+== PSU CARES statement
+
+Connects students with resources when they are experiencing distress or other
+concerns that might impact their personal or academic success.
+
+- #link("https://cm.maxient.com/reporting.php?PortlandStateUniv=")[Make a referral to PSU CARES]
+- Call PSU CARES: 503-725-4422
+- Email PSU CARES: #link("mailto:askdos@pdx.edu")[askdos\@pdx.edu]
+
+== Understanding sexual misconduct statement
+
+PSU desires to create a safe campus.
+As part of that mission, PSU requires all students to take the
+#link("https://www.pdx.edu/diversity/understanding-sexual-misconduct-and-resources-student-module")[Understanding Sexual Misconduct and Resources learning module].
+If you or someone you know has been harassed or assaulted, you can find the
+appropriate resources on PSU’s
+#link("https://www.pdx.edu/sexual-assault/")[Sexual Misconduct Response website].
 
 == Title IX and reporting
 
@@ -220,19 +276,26 @@ information private.
 If you would rather share information about these matters with a PSU staff
 member who does not have these reporting responsibilities and can keep the
 information confidential, please use these campus resources:
-+ Connect with Confidential Advocates: 503-894-7982 or schedule online to talk with a Confidential Advocate (for matters regarding sexual harassment and sexual and relationship violence).
-+ Center for Student Health and Counseling: 1880 SW 6th Avenue \#200; 503-725-2800
++ *Connect with Confidential Advocates* --
+  503-894-7982 or 
+  #link("https://psuwrc.youcanbook.me/")[schedule online]
+  to talk with a Confidential Advocate
+  (for matters regarding sexual harassment and sexual and relationship violence).
++ *#link("https://www.pdx.edu/health-counseling/")[Center for Student Health and Counseling]* --
+  1880 SW 6th Avenue \#200; 503-725-2800
 
 == Discrimination and bias incidents statement
 
-The Office of Equity and Compliance (OEC) addresses complaints of
+#link("https://www.pdx.edu/diversity/equity-compliance")[The Office of Equity and Compliance (OEC)]
+addresses complaints of
 discrimination, discriminatory Harassment, and sexual harassment against
 employees (faculty and staff).
 If you or someone you know believes they have been discriminated against, you
 may file a complaint.
 Someone from the OEC will contact you to discuss how to best address your
 complaint.
-The Bias Review Team (BRT) gathers information on bias incidents that happen
+#link("https://www.pdx.edu/diversity/bias-review-team")[The Bias Review Team (BRT)]
+gathers information on bias incidents that happen
 on and around campus, and gives resources and support to individuals who
 experience them.
 You can report a bias incident you experienced or learned about.
@@ -258,11 +321,11 @@ volunteering; student resources such as computer labs, event, lounge,
 and study spaces; and extensive programming.
 All are welcome!
 
-+ Multicultural Student Center
-+ La Casa Latina Student Center
-+ Native American Student and Community Center
-+ Pan African Commons
-+ Pacific Islander, Asian, and Asian American Student Center
-+ Middle East, North Africa, South Asia Student Center
++ #link("https://www.pdx.edu/cultural-resource-centers/multicultural-student-center")[Multicultural Student Center]
++ #link("https://www.pdx.edu/cultural-resource-centers/la-casa-latina-student-center")[La Casa Latina Student Center]
++ #link("https://www.pdx.edu/native-american-center/")[Native American Student and Community Center]
++ #link("https://www.pdx.edu/cultural-resource-centers/pan-african-commons")[Pan African Commons]
++ #link("https://www.pdx.edu/cultural-resource-centers/pacific-islander-asian-asian-american-student-center")[Pacific Islander, Asian, and Asian American Student Center]
++ #link("https://www.pdx.edu/cultural-resource-centers/middle-east-north-africa-south-asia-student-center")[Middle East, North Africa, South Asia Student Center]
 
 #bibliography("ref.bib", style: "chicago-author-date")
