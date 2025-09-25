@@ -50,7 +50,7 @@
   | Email: #link("mailto:gpin2@pdx.edu")[gpin2\@pdx.edu] \
   // | Website: #link("https://web.pdx.edu/~gpin2/")[web.pdx.edu/\~gpin2]
   Office: FMH 464-G
-  | Office hours: *MW* 16:00-17:00, or by arrangement
+  | Office hours: *MW* 14:300-15:30, or by arrangement
 ]
 #let class = "MTH 251Z Differential Calculus"
 #let term = "Fall 2025"
