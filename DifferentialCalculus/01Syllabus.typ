@@ -58,7 +58,7 @@ Required materials are:
 
 == Suggested books and other resources
 
-Calculus may be a challenging subject, sometimes more rigour or less rigour
+Calculus may be a challenging subject, sometimes more rigor or less rigor
 may be needed to understand a topic---a lot of exercises are also required.
 Some classical books are @CalculusSpivak2006 (very thorough),
 @ProblemsDemidovich1969 (lots of exercises), @CalculusStewart2010 (very
@@ -66,7 +66,7 @@ popular).
 
 == How to set up Edfinity
 
-+ If you already have an Edfinity account from a previous course, please sign into it. Otherwise, go to step 2.
++ If you already have an Edfinity account from a previous course, please sign in to it. Otherwise, go to step 2.
 + Go to the #link("https://edfinity.com/users/sign_in")[Edfinity registration page].
 + You will be prompted to pay \$30 (or enter an access code _if_ you purchased one from the PSU bookstore) and enroll in our section.
 
@@ -107,7 +107,7 @@ is not limited to, attending office hours, presenting solutions to problems in
 class, and participating in class discussions.
 Extra credit will not be given for attendance alone.
 Extra credit will not be given for assignments that are late or incomplete.
-Extra credit cannot constitute more than *10%* of an assignment's total points.
+Additional credit cannot constitute more than *10%* of an assignment's total points.
 
 == Technology policy
 
@@ -292,7 +292,7 @@ discrimination, discriminatory Harassment, and sexual harassment against
 employees (faculty and staff).
 If you or someone you know believes they have been discriminated against, you
 may file a complaint.
-Someone from the OEC will contact you to discuss how to best address your
+Someone from the OEC will reach out to you to discuss how to best address your
 complaint.
 #link("https://www.pdx.edu/diversity/bias-review-team")[The Bias Review Team (BRT)]
 gathers information on bias incidents that happen
