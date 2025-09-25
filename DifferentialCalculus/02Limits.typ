@@ -24,7 +24,7 @@ heat.
 What are the key ingredients of a limit? There is something _to be approximated_,
 and there is something that _will approximate it_.
 We will see that _approximation_ entails both a notion of _distance_ and a
-notion of _eventuality_: given a tolerance, there exists an _instance_ or we
+notion of _eventuality_: given a tolerance, there exists an _instance_, or we
 verify a _criteria_ that ensures _we are close enough_.
 
 === A note on notation
@@ -42,7 +42,7 @@ $im(f) = {f(x) in Y : x in dom(f)}$.
 When we have two sets $A, B subset.eq X$, their difference set is defined as
 $A without B = { a in A : a  in.not B }$. For example, "all real numbers but
 zero" can be written as the set $RR without {0}$.
-Intervals are usually denoted with _parenthesis_ or _brackets_, depending if
+Intervals are usually denoted with _parenthesis_ or _brackets_, depending on if
 they contain the extreme points or not; consider, for example,
 $[a,b) = { x in RR : a <= x < b }$.
 
@@ -51,8 +51,8 @@ $[a,b) = { x in RR : a <= x < b }$.
 A sequence in a space#footnote[
   Here, _space_ means a _set_ (a collection of objects) endowed with some
   _structure_.
-  Out predilect structure are _metric spaces_, i.e., we have a distance.
-  We will go into it later but it is *not* the main focus of the course.
+  Our preferred structure are _metric spaces_, i.e., we have a distance.
+  We will go into it later, but it is *not* the main focus of the course.
 ]
 $X$ is _basically_#footnote[
   The mathematical jargon may not be amicable, but makes it more fun to write
@@ -110,7 +110,7 @@ Consider a function $f: X -> Y$, and a point $c$ that is _approximable_ by
 elements in $X$.
 Let $y in Y$ be a known value.
 
-We can define, in a similar way, that the limit of $f$ at $c$ is $y$ if,
+We can define, similarly, that the limit of $f$ at $c$ is $y$ if,
 for every _tiny small distance_ $epsilon > 0$, there exists _tiny small
 distance (that depends on $epsilon$)_ $delta = delta(epsilon) > 0$ such that
 given a point $x in X$ such that $0 < |x - c| < delta$ (this is, not equal to
