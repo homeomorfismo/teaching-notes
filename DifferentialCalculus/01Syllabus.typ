@@ -13,7 +13,7 @@
 + *CRN* - 14086
 + *Schedule* - MW 11:00 AM - 12:40 PM
 + *Location* - KMC 255
-+ *Office hours* - *MW* 2:30 PM - 3:30 PM, or by arrangement
++ *Office hours* - *T* 15:00 - 16:00, *W* 13:00 - 14:00, and by appointment
 
 == Drop and withdrawal deadlines
 
