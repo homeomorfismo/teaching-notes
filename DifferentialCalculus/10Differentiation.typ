@@ -1,4 +1,6 @@
 #import "@preview/lilaq:0.5.0" as lq
+#import "@preview/physica:0.9.6": *
+
 #import "00Template.typ": *
 #show: main_format
 
@@ -122,25 +124,26 @@ than anything we are used to work with.
 )
 
 We would like to ensure the existence of a _best linear approximation_
-$overline(f)(x) = a (x - x^*) + b$ of a given function $f$ at a point $x^*$.
+$"Lin" (f, x^*) (x) = a (x - x^*) + b$ of a function $f$ at a point $x^*$.
 This means that we want to find constants $a$ and $b$ such that
-$overline(f)(x^*) = f(x^*)$ and that $overline(f)$ is the best linear
+$"Lin"(f, x^*)(x) = a (x - x^*) + b$ becomes the best linear
 approximation of $f$ near $x^*$.
-To ensure that $overline(f)(x^*) = f(x^*)$, we set
+To ensure that the line passes through the point $(x^*, f(x^*))$, we set
 $b = f(x^*)$, so that
-$overline(f)(x) = a (x - x^*) + f(x^*)$.
+$"Lin"(f, x^*)(x) = a (x - x^*) + f(x^*)$.
 *But how do we find the best slope $a$?*
 
-The trick is to consider the error between $f$ and $overline(f)$:
+The trick is to consider the error between $f$ and $"Lin"(f, x^*)$:
 $
-"error"(x) = f(x) - overline(f)(x) = f(x) - (a (x - x^*) + f(x^*)) = f(x) - f(x^*) - a (x - x^*).
+"error"(x) = f(x) - "Lin"(f, x^*)(x) = f(x) - f(x^*) - a (x - x^*).
 $
 We want this error to be as small as possible when $x$ is near $x^*$.
 Thus, we consider the limit
 $
-lim_(x -> x^*) frac("error"(x), x - x^*) = lim_(x -> x^*) frac(f(x) - f(x^*) - a (x - x^*), x - x^*).
+lim_(x -> x^*) frac("error"(x), x - x^*) = lim_(x -> x^*) frac(f(x) - f(x^*) - a (x - x^*), x - x^*),
 $
-To make this limit equal to zero, we need to choose $a$ such that
+and we want to choose $a$ such that this limit is equal to zero.
+In that case, we have
 $
 lim_(x -> x^*) frac(f(x) - f(x^*), x - x^*) - a = 0,
 $
@@ -149,19 +152,19 @@ $
 a = lim_(x -> x^*) frac(f(x) - f(x^*), x - x^*).
 $
 This limit, if it exists, gives us the slope of the best linear approximation
-$overline(f)$ of $f$ at $x^*$.
+$"Lin"(f, x^*)(x) = a (x - x^*) + f(x^*)$ of $f$ at $x^*$.
 
 In a way to honor the notion of rate of change (and the ever non-standarized
 notation), we denote this limit as the _derivative_ of $f$ at $x^*$, and we may
 write as
 $
-frac(diff f,diff x) (x^*) = f'(x^*) = dot(f)(x^*) = lim_(x -> x^*) frac(f(x) - f(x^*), x - x^*).
+frac(dd(f),dd(x)) (x^*) = f'(x^*) = dot(f)(x^*) = lim_(x -> x^*) frac(f(x) - f(x^*), x - x^*).
 $
 
 We may also express the derivative in terms of $Delta x = x - x^*$, and this
 variation tending to zero:
 $
-frac(diff f,diff x) (x) = f'(x) = dot(f)(x) = lim_(Delta x -> 0) frac(f(x + Delta x) - f(x), Delta x).
+frac(dd(f),dd(x)) (x) = f'(x) = dot(f)(x) = lim_(Delta x -> 0) frac(f(x + Delta x) - f(x), Delta x).
 $
 
 #block(
@@ -169,9 +172,9 @@ $
   color: psu-orange,
 )[
     The _derivative_ of a function $f$ at a point $x$, denoted as
-    $frac(diff f,diff x) (x)$ or $f'(x)$ or $dot(f)(x)$, is defined as
+    $frac(dd(f),dd(x)) (x)$ or $f'(x)$ or $dot(f)(x)$, is defined as
     $
-    frac(diff f,diff x) (x) = f'(x) = dot(f)(x) = lim_(Delta x -> 0) frac(f(x + Delta x) - f(x), Delta x).
+    frac(dd(f),dd(x)) (x) = f'(x) = dot(f)(x) = lim_(Delta x -> 0) frac(f(x + Delta x) - f(x), Delta x).
     $
 
     If a function $f$ has a derivative at all $x in dom(f)$, we say that $f$ is
@@ -189,5 +192,6 @@ $
     lim_(Delta x -> 0) frac(abs(f(x + Delta x) - f(x) - f'(x) Delta x), abs(Delta x)) = 0.
     $
     This last limits means that the error between $f$ and its linear approximation
-    $overline(f)(x) = f'(x) (x - x^*) + f(x^*)$ goes to zero faster than $abs(Delta x)$.
+    $"Lin"(f, x)(x + Delta x) = f'(x) (Delta x) + f(x)$ goes to zero faster than
+    $Delta x$.
 ]
