@@ -94,5 +94,15 @@
   ]
 }
 
+#let exam-block = (body) => {
+  rect(
+    stroke: 1pt,
+    radius: 5pt,
+    width: 100%,
+  )[
+    #pad(0.25em)[#body]
+  ]
+}
+
 // Math notation
 #let dom = "dom"
