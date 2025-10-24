@@ -8,11 +8,11 @@
 
 Name: #line(length: 100%)
 
-+ This exam consists of six (6) sections for a total of 90 points.
-+ You have 100 minutes to complete the exam.
-+ Show all your work. Partial credit will be awarded for incomplete answers
++ This exam consists of six (6) sections for a total of *96 points*.
++ You have *100 minutes* to complete the exam.
++ Show *all* your work. Partial credit will be awarded for incomplete answers
   if your reasoning is clear. No credit will be given for unsupported answers.
-+ No electronic devices are allowed.#footnote("DRC-exeptions apply")
++ *No electronic devices are allowed.* #footnote("DRC-exeptions apply")
   You will be asked to turn off and put away all electronic devices
   (including, but not limited to, cell phones, smart watches, tablets, laptops,
   and calculators) for the duration of the exam.
@@ -32,16 +32,19 @@ Name: #line(length: 100%)
 
 #line(length: 100%, stroke: psu-forest-green)
 
+Final score:
+#line(length: 100%)
+
 // TODO: Formulae
 
 #pagebreak()
-== (15 points) True or False
+== (16 points) True or False
 #line(length: 50%, stroke: psu-forest-green)
 
 Determine whether each of the following statements is true or false.
 If the statement is false, provide a brief explanation or a counterexample.
 If the statement is true, you do not need to provide any explanation.
-*Each statement is worth 3 points.*
+*Each statement is worth 4 points.*
 
 #exam-block()[
   If a function $f(x)$ is continuous at a point $x = a$, then it is also
@@ -50,7 +53,7 @@ If the statement is true, you do not need to provide any explanation.
 
 #exam-block()[
   *Answer*
-  #v(1.5cm)
+  #v(2cm)
 ]
 
 #exam-block()[
@@ -60,7 +63,7 @@ If the statement is true, you do not need to provide any explanation.
 
 #exam-block()[
   *Answer*
-  #v(1.5cm)
+  #v(2cm)
 ]
 
 #exam-block()[
@@ -70,97 +73,100 @@ If the statement is true, you do not need to provide any explanation.
 
 #exam-block()[
   *Answer*
-  #v(1.5cm)
+  #v(2cm)
 ]
 
 #exam-block()[
   The function $f(x) = 1000^x - x^2 - 10$ has at least one real root (this is,
   there is at least one real number $c$ such that $f(c) = 0$).
+  Hint: Try some simple values of $x$ to evaluate $f(x)$, like $x = 0$ or $x = 1$.
 ]
 
 #exam-block()[
   *Answer*
-  #v(1.5cm)
+  #v(2cm)
 ]
 
-#exam-block()[
-  If the lateral limits of a function $f(x)$ at a point $x = a$ exist but are
-  different, then $f(x)$ could still be continuous at $x = a$.
-]
-
-#exam-block()[
-  *Answer*
-  #v(1.5cm)
-]
+//#exam-block()[
+//  If the lateral limits of a function $f(x)$ at a point $x = a$ exist but are
+//  different, then $f(x)$ could still be continuous at $x = a$.
+//]
+//
+//#exam-block()[
+//  *Answer*
+//  #v(1.5cm)
+//]
 
 
 #pagebreak()
-== (15 points) Evaluate the limits
+== (16 points) Evaluate the limits
 #line(length: 50%, stroke: psu-forest-green)
 
 Compute the following limits. Please, carry out all necessary steps to justify
 your answers, and carry out any algebraic simplifications needed.
 If the limit does not exist, explain why; you may write "DNE" as your final
 answer.
-*Each limit is worth 3 points.*
+*Each limit is worth 4 points.*
 
 #exam-block()[
   $limits(lim)_(x -> 2) x^3 - 4 x + 3$
-  #v(3cm)
+  #v(4cm)
 ]
 
 #exam-block()[
   $limits(lim)_(x -> 0) frac(sin(5x), x)$
-  #v(3cm)
+  #v(4cm)
 ]
 
 #exam-block()[
   $limits(lim)_(x -> oo) frac(4x^3 - x + 2, 2x^3 + 3x^2 - 1)$
-  #v(3cm)
+  #v(4cm)
 ]
 
-#exam-block()[
-  $limits(lim)_(x -> 1) frac(x^2 - 1, x - 1)$
-  #v(3cm)
-]
+// #exam-block()[
+//   $limits(lim)_(x -> 1) frac(x^2 - 1, x - 1)$
+//   #v(3cm)
+// ]
 
 #exam-block()[
   $limits(lim)_(x -> 0) frac(sqrt(x + 1) - 1, x)$
-  #v(3cm)
+  #v(4cm)
 ]
 
 #pagebreak()
-= (15 points) Analysis of a piecewise-defined function
+= (16 points) Analysis of a piecewise-defined function
 #line(length: 50%, stroke: psu-forest-green)
 
-Consider the function $f(x)$ defined as follows:
+Consider the following example of a piecewise-defined function $f(x)$
 $
 f(x) = cases(
-  x^2 - alpha " if " x < 2,
-  sin(alpha (x - 2))/(x - 2) " if " x > 2,
+  x^2 - 3 " if " x < 2,
+  sin(x - 2)/(x - 2) " if " x > 2,
 )
 $
+This is a continuous function everywhere except possibly at $x = 2$, but we can
+verify that $lim_(x -> 2) f(x) = 1$ by computing the lateral limits: this is
+a removable discontinuity.
 
 #exam-block()[
-  1. (8 points) State (in terms of $alpha$):
-    a. The left-hand limit of $f(x)$ as $x$ approaches 2.
-    b. The right-hand limit of $f(x)$ as $x$ approaches 2.
-  Note that $f(2)$ is not defined and that $alpha$ _will_ appear in your
-  answers.
+  1. (4 points) Construct a function $g(x)$ that has a *jump discontinuity* at
+     $x = 2$.
+  2. (4 points) Compute $lim_(x -> 2^-) g(x)$ and $lim_(x -> 2^+) g(x)$ for your
+     function $g(x)$.
   #v(8cm)
 ]
 
 #exam-block()[
-  2. (5 points) Determine the value of the constant $alpha$ such that
-     $f(x)$ has a removable discontinuity at $x = 2$.
-  3. (2 points) How would you redefine $f(2)$ to make $f(x)$ continuous at
-     $x = 2$?
+  3. (4 points) Construct a function $h(x)$ that has a *removable discontinuity*
+     at $x = -1$.
+  4. (4 points) Compute $lim_(x -> -1^-) h(x)$ and $lim_(x -> -1^+) h(x)$ for your
+      function $h(x)$.
   #v(8cm)
 ]
 
 
 #pagebreak()
-= (15 points) Qualitative analysis of a function
+= (16 points) Qualitative analysis of a function
 #line(length: 50%, stroke: psu-forest-green)
 
 Given the graph @discontinuities of a function $f(x)$ shown below,
@@ -182,7 +188,7 @@ provide the following answers:
 ) <discontinuities>
 
 #exam-block()[
-  1. (7 points) Compute:
+  1. (8 points) Compute:
     - $f(-1)$, $lim_(x -> -1^-) f(x)$, and $lim_(x -> -1^+) f(x)$.
     - Conclude whether $f(x)$ is continuous at $x = -1$.
     - Can it be made continuous at $x = -1$ by redefining its value there?
@@ -194,50 +200,50 @@ provide the following answers:
     - $f(0)$, $lim_(x -> 0^-) f(x)$, and $lim_(x -> 0^+) f(x)$.
     - Conclude whether $f(x)$ is continuous at $x = 0$.
     - Can it be made continuous at $x = 0$ by redefining its value there?
-    - Can $f$ be made differentiable at $x = 0$ by redefining its value there?
+    // - Can $f$ be made differentiable at $x = 0$ by redefining its value there?
   #v(6cm)
 ]
 
 #pagebreak()
-= (15 points) Limit algebra
+= (16 points) Limit algebra
 #line(length: 50%, stroke: psu-forest-green)
 
 Assume that $limits(lim)_(x -> a) f(x) = 1/2$, $limits(lim)_(x -> a) g(x) = -1$,
 and $limits(lim)_(x -> a) h(x) = 1$. Compute the following limits using limit
-laws. *Each limit is worth 3 points.*
+laws. *Each limit is worth 4 points.*
 
 #exam-block()[
-  1. (3 points) $limits(lim)_(x -> a) (4 f(x) + 2 g(x))$
-  #v(3cm)
+  1. $limits(lim)_(x -> a) (4 f(x) + 2 g(x))$
+  #v(4cm)
+]
+
+// #exam-block()[
+//   2. (3 points) $limits(lim)_(x -> a) frac(f(x), g(x))$
+//   #v(3cm)
+// ]
+
+#exam-block()[
+  3. $limits(lim)_(x -> a) f(x)^g(x) + h(x)$
+  #v(4cm)
 ]
 
 #exam-block()[
-  2. (3 points) $limits(lim)_(x -> a) frac(f(x), g(x))$
-  #v(3cm)
+  4. $limits(lim)_(x -> a) (f(x) - 1)(g(x) + 1)$
+  #v(4cm)
 ]
 
 #exam-block()[
-  3. (3 points) $limits(lim)_(x -> a) f(x)^g(x) + h(x)$
-  #v(3cm)
-]
-
-#exam-block()[
-  4. (3 points) $limits(lim)_(x -> a) (f(x) - 1)(g(x) + 1)$
-  #v(3cm)
-]
-
-#exam-block()[
-  5. (3 points) $limits(lim)_(x -> 2 a) f(x/2) + 3 h(x/2)$
-  #v(3cm)
+  5. $limits(lim)_(x -> 2 a) f(x/2) + 3 h(x/2)$
+  #v(4cm)
 ]
 
 #pagebreak()
-= (15 points) Derivatives
+= (16 points) Derivatives
 #line(length: 50%, stroke: psu-forest-green)
 
 Compute the derivatives (by definition) of the following functions.
 Show all necessary steps.
-*Each derivative is worth 3 points.*
+*Each derivative is worth 4 points.*
 
 Remember that the derivative of a function $f(x)$ is defined as
 $f'(a) = limits(lim)_(h -> 0) frac(f(a + h) - f(a), h)
@@ -245,28 +251,28 @@ $f'(a) = limits(lim)_(h -> 0) frac(f(a + h) - f(a), h)
 
 #exam-block()[
   1. $f(x) = x$
-  #v(3.2cm)
+  #v(3.5cm)
 ]
 
 #exam-block()[
   2. $f(x) = x^2 + 1$
-  #v(3.2cm)
+  #v(3.5cm)
 ]
 
 #exam-block()[
   3. $f(x) = sqrt(x)$
-  #v(3.2cm)
+  #v(3.5cm)
 ]
 
 #exam-block()[
   4. $f(x) = cos(x)$
-  #v(3.2cm)
+  #v(3.5cm)
 ]
 
-#exam-block()[
-  5. $f(x) = 1/(x+1)$
-  #v(3.2cm)
-]
+// #exam-block()[
+//   5. $f(x) = 1/(x+1)$
+//   #v(3.2cm)
+// ]
 #v(-0.25cm)
 Remember that $cos(alpha) - cos(beta) = -2 sin(frac(alpha + beta, 2)) sin(frac(alpha - beta, 2))$.
 
@@ -284,27 +290,21 @@ Consider the sequence defined as follows:
 
 #exam-block()[
   1. (5 points) Check that $1/2 S_n = 1/2 + 1/4 + 1/8 + ... + 1 / (2^(n-1)) + 1/(2^(n))$.
-  Conclude that $1/2 S_n = S_(n+1) - 1$.
+     Conclude that $1/2 S_n = S_(n+1) - 1$.
   #v(6cm)
 ]
 
 #exam-block()[
   2. (2 points) Given any (convergent) sequence $a_n$, argue why the limit of
-  $a_(n+1)$ as $n$ approaches infinity is equal to the limit of $a_n$ as
-  $n -> oo$.
+     $a_(n+1)$ as $n$ approaches infinity is equal to the limit of $a_n$ as
+     $n -> oo$.
   #v(3cm)
 ]
 
 #exam-block()[
   3. (3 points) Using the previous two parts, compute the limit of the sequence
-  $S_n$ as $n$ approaches infinity. (Hint: call $lim_(n -> oo) S_n = L$ and use
-  the relation you found in part 1 to find an equation for $L$, then solve for
-  $L$.)
+     $S_n$ as $n$ approaches infinity. (Hint: call $lim_(n -> oo) S_n = L$ and use
+     the relation you found in part 1 to find an equation for $L$, then solve for
+     $L$.)
   #v(6cm)
 ]
-
-
-
-
-
-
