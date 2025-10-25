@@ -32,10 +32,23 @@ Name: #line(length: 100%)
 
 #line(length: 100%, stroke: psu-forest-green)
 
-Final score:
-#line(length: 100%)
+#exam-block()[
+  Final Score:
+  #line(length: 100%)
+  Other observations:
+  #v(2cm)
+]
 
-// TODO: Formulae
+// Formulae
+#exam-block()[
+  Here are some useful formulae that you may need during the exam.
+  - $(a + b)^2 = a^2 + 2a b + b^2$
+  - $a^2 - b^2 = (a + b)(a - b)$
+  - $a - b = (sqrt(a) - sqrt(b))(sqrt(a) + sqrt(b))$
+  - $sin^2(x) + cos^2(x) = 1$
+  - $cos(alpha) - cos(beta) = -2 sin(frac(alpha + beta, 2)) sin(frac(alpha - beta, 2))$
+]
+
 
 #pagebreak()
 == (16 points) True or False
@@ -109,7 +122,7 @@ answer.
 *Each limit is worth 4 points.*
 
 #exam-block()[
-  $limits(lim)_(x -> 2) x^3 - 4 x + 3$
+  $limits(lim)_(x -> 2) (x^3 - 4 x + 3)$
   #v(4cm)
 ]
 
@@ -137,31 +150,20 @@ answer.
 = (16 points) Analysis of a piecewise-defined function
 #line(length: 50%, stroke: psu-forest-green)
 
-Consider the following example of a piecewise-defined function $f(x)$
-$
-f(x) = cases(
-  x^2 - 3 " if " x < 2,
-  sin(x - 2)/(x - 2) " if " x > 2,
-)
-$
-This is a continuous function everywhere except possibly at $x = 2$, but we can
-verify that $lim_(x -> 2) f(x) = 1$ by computing the lateral limits: this is
-a removable discontinuity.
-
 #exam-block()[
   1. (4 points) Construct a function $g(x)$ that has a *jump discontinuity* at
-     $x = 2$.
+     $x = 2$, and sketch it.
   2. (4 points) Compute $lim_(x -> 2^-) g(x)$ and $lim_(x -> 2^+) g(x)$ for your
      function $g(x)$.
-  #v(8cm)
+  #v(9cm)
 ]
 
 #exam-block()[
   3. (4 points) Construct a function $h(x)$ that has a *removable discontinuity*
-     at $x = -1$.
+     at $x = -1$, and sketch it.
   4. (4 points) Compute $lim_(x -> -1^-) h(x)$ and $lim_(x -> -1^+) h(x)$ for your
       function $h(x)$.
-  #v(8cm)
+  #v(9cm)
 ]
 
 
@@ -223,17 +225,17 @@ laws. *Each limit is worth 4 points.*
 // ]
 
 #exam-block()[
-  3. $limits(lim)_(x -> a) f(x)^g(x) + h(x)$
+  2. $limits(lim)_(x -> a) f(x)^g(x) + h(x)$
   #v(4cm)
 ]
 
 #exam-block()[
-  4. $limits(lim)_(x -> a) (f(x) - 1)(g(x) + 1)$
+  3. $limits(lim)_(x -> a) (f(x) - 1)(g(x) + 1)$
   #v(4cm)
 ]
 
 #exam-block()[
-  5. $limits(lim)_(x -> 2 a) f(x/2) + 3 h(x/2)$
+  4. $limits(lim)_(x -> 2 a) f(x/2) + 3 h(x/2)$
   #v(4cm)
 ]
 
