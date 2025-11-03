@@ -1,13 +1,13 @@
 #import "@preview/lilaq:0.5.0" as lq
 #import "@preview/physica:0.9.6": *
 
-#import "00Template.typ": *
+#import "00template.typ": *
 #show: main_format
 
 #date_header
 #make_title
 
-= On differentiation
+= on differentiation
 
 Differentiation is probably the epitome of undergratuate mathematics, and is,
 by far, one of the most useful tools in mathematics, physics, engineering, and
