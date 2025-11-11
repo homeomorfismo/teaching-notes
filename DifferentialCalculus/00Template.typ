@@ -30,6 +30,13 @@
     spacing: 1.0em,
     justify: true,
   )
+  #set table(
+    stroke: (x, y) => if y == 0 {
+      (bottom: 0.7pt + black)
+    },
+    align: left + horizon,
+    gutter: 0.5em,
+  )
   #doc
 ]
 
