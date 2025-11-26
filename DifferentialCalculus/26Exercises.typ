@@ -70,7 +70,7 @@ Compute the following limits using L'Hôpital's Rule.
 - $lim_(x -> 0) frac(1 - cos(x) , x)$
 - $lim_(x -> 2) frac(x^3 - 8, x^2 - 4)$
 - $lim_(x -> 0^+) x ln(x)$
-- $lim_(x -> oo) frac(e^x - x - 1, cos(x) - 1)$
+- $lim_(x -> 0) frac(e^x - x - 1, cos(x) - 1)$
 - $lim_(x -> 0) 1 / sin(x) - 1 / x$
 - $lim_(x -> oo) x / e^x$
 - $lim_(x -> 1) frac(x^m - 1, x^n - 1)$ where $m$ and $n$ are non-zero constants.
